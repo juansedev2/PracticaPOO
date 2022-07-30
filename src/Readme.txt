@@ -1,0 +1,1 @@
+El objeto del ejercicio es reforzar el tema de POO en herencia y polimorfismo, para caso de validaciones, simplemente agregar un try catch en lecturas de variables de tipo específico.

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>486</x>
+      <y>0</y>
+      <w>486</w>
+      <h>558</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Abstract class&gt;&gt;
+Producto
+--
+# codigo: int
+# descripcion: String
+# precio_compra : float
+# precio_venta : float
+# cantidad_bodega : int
+# cantidad_min_requerida : int
+# cantidad_max_inventario : int
+# porcentaje_descuento: float
+--
++ Producto()
++ getCodigo() : int
++ setCodigo(codigo : int)
++ getDescripcion() : String
++ setDescripcion(descripcion : String)
++ getPrecio_compra() : float
++ setPrecio_compra(precio_compra : float)
++ getPrecio_venta() : float
++ setPrecio_venta(precio_venta : float)
++ getCantidad_bodega() : int
++ setCantidad_bodega(cantidad_bodega : int)
++ getcantidad_min_requerida : int
++ setCantidad_min:requerida (cantidad_min_requerida : int)
++ getCantidad_max_inventario() : int
++ setCantidad_max_inventario(cantidad_max_inventario : int)
++ getPorcentaje_descuento() : float
++ setPorcentaje_descuento(porcentaje_descuento : float)
++ solicitarPedido() : boolean
++ calcularTotalPagoDescuento() : float
++ calcularTotalPago(): float
++ mostrarAlerta(): String
++ toString() : String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>549</y>
+      <w>243</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>250.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>288</x>
+      <y>666</y>
+      <w>270</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Prenda_vestir
+--
+- planchado : boolean
+- talla : String
+--
++ Prenda_vestir(super())
++ getPlanchado() : boolean
++ setPlanchado(planchado : boolean)
++ getTalla() : String
++ setTalla(talla : String)
++ toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>666</y>
+      <w>234</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>Calzado
+--
+- talla : int
+--
++ Calzado(super())
++ getTalla:() : int
++ setTalla(talla : int)
++ toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>837</x>
+      <y>549</y>
+      <w>207</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;210.0;130.0</additional_attributes>
+  </element>
+</diagram>
